@@ -1,0 +1,181 @@
+{
+  "identity": {
+    "name": "E1",
+    "role": "Anti-AI Creative Designer",
+    "principles": [
+      "Fusion over Imitation: Mix scientific precision with raw athletic energy",
+      "Emotion First: Every pixel must signal 'Momentum'",
+      "Content is King: Data is the hero, not the decoration",
+      "Negative Space: Use deep black void to make neon accents pop"
+    ]
+  },
+  "design_system": {
+    "theme_strategy": {
+      "mode": "dark",
+      "archetype": "The Performance Pro (Modified)",
+      "mood": "Energetic, Precision, Scientific, High-Contrast",
+      "core_palette": {
+        "background": {
+          "base": "#09090b",
+          "surface": "#18181b",
+          "surface_highlight": "#27272a"
+        },
+        "text": {
+          "primary": "#fafafa",
+          "secondary": "#a1a1aa",
+          "muted": "#71717a"
+        },
+        "accents": {
+          "primary": "#84cc16",
+          "primary_hover": "#65a30d",
+          "secondary": "#06b6d4",
+          "danger": "#ef4444",
+          "warning": "#f59e0b",
+          "success": "#10b981"
+        },
+        "gradients": {
+          "subtle_glow": "linear-gradient(180deg, rgba(132, 204, 22, 0.15) 0%, rgba(9, 9, 11, 0) 100%)",
+          "glass_surface": "linear-gradient(145deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 100%)"
+        }
+      }
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Barlow Condensed, sans-serif",
+        "body": "Manrope, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "import_instruction": "Add to index.css: @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Manrope:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap');",
+      "scale": {
+        "h1": "text-5xl font-bold tracking-tight uppercase",
+        "h2": "text-3xl font-semibold tracking-tight uppercase",
+        "h3": "text-xl font-medium tracking-wide",
+        "body": "text-base font-normal leading-relaxed",
+        "label": "text-xs font-bold tracking-widest uppercase text-muted-foreground"
+      }
+    },
+    "ui_enhancers": {
+      "borders": "1px solid rgba(255,255,255,0.08)",
+      "radius": {
+        "sm": "rounded-sm",
+        "md": "rounded-md",
+        "lg": "rounded-lg",
+        "xl": "rounded-xl"
+      },
+      "shadows": {
+        "neon_glow": "0 0 20px -5px rgba(132, 204, 22, 0.3)",
+        "card_depth": "0 10px 30px -10px rgba(0,0,0,0.5)"
+      },
+      "glassmorphism": {
+        "heavy": "bg-black/60 backdrop-blur-xl border-white/10",
+        "light": "bg-white/5 backdrop-blur-md border-white/5"
+      }
+    }
+  },
+  "layout_strategies": {
+    "landing_page": {
+      "structure": "Centralized 'Calibration' Card",
+      "background": "Full-screen dark gym image with heavy overlay (90% opacity)",
+      "form_style": "Multi-step Wizard. Not a vertical list. One question per view or logical grouping.",
+      "visuals": "Progress bar at top. 'Next' button is prominent Neon Lime."
+    },
+    "dashboard": {
+      "structure": "Bento Grid (CSS Grid)",
+      "grid_config": "grid-cols-1 md:grid-cols-4 gap-6 p-6",
+      "zones": {
+        "header": "col-span-full flex justify-between items-center mb-6",
+        "stats_row": "col-span-full grid grid-cols-2 md:grid-cols-4 gap-4",
+        "main_workout": "col-span-full md:col-span-3 row-span-2",
+        "diet_sidebar": "col-span-full md:col-span-1 row-span-2",
+        "ml_insights": "col-span-full md:col-span-2",
+        "explainability": "col-span-full md:col-span-2"
+      }
+    }
+  },
+  "components_library": {
+    "mode_badge": {
+      "path": "src/components/custom/ModeBadge.jsx",
+      "style": "pill-shape, glowing border, dynamic color based on mode (Red=Performance, Blue=Balanced, Green=Recovery)"
+    },
+    "workout_card": {
+      "path": "src/components/custom/WorkoutCard.jsx",
+      "style": "Horizontal layout. Left: Video Thumbnail (16:9). Right: Details. Action: 'Play' overlay on hover."
+    },
+    "diet_card": {
+      "path": "src/components/custom/DietCard.jsx",
+      "style": "Vertical minimalist. Top: Food Image. Bottom: Macros Grid (Protein/Carbs/Fats)."
+    },
+    "video_modal": {
+      "path": "src/components/custom/ExerciseModal.jsx",
+      "style": "Large dialog. 70% width. Dark backdrop. YouTube embed takes prominence."
+    },
+    "ml_insight_panel": {
+      "path": "src/components/custom/MLInsightPanel.jsx",
+      "style": "Glassmorphic panel. Use radar charts or simple progress bars to show 'Similarity Score' or 'Cluster Group'."
+    }
+  },
+  "assets": {
+    "images": [
+      {
+        "category": "background_hero",
+        "url": "https://images.unsplash.com/photo-1634042341465-f08e0d10a670?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "description": "Dark moody gym background for landing page",
+        "usage": "Landing Page Background (with overlay)"
+      },
+      {
+        "category": "workout_thumbnail_default",
+        "url": "https://images.unsplash.com/photo-1734668484998-c943d1fcb48a?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "description": "Man on bench press",
+        "usage": "Fallback for workout videos"
+      },
+      {
+        "category": "diet_thumbnail_default",
+        "url": "https://images.unsplash.com/photo-1727018953313-403d17215a1b?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "description": "Dark plate with healthy food",
+        "usage": "Fallback for diet items"
+      },
+      {
+        "category": "cardio_thumbnail",
+        "url": "https://images.unsplash.com/photo-1700784795176-7ff886439d79?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "description": "Athlete squatting/active",
+        "usage": "Cardio/Legs section"
+      }
+    ],
+    "icons": {
+      "library": "lucide-react",
+      "mapping": {
+        "workout": "Dumbbell",
+        "diet": "Utensils",
+        "time": "Clock",
+        "recovery": "BatteryCharging",
+        "ai": "BrainCircuit",
+        "video": "PlayCircle",
+        "fire": "Flame"
+      }
+    }
+  },
+  "universal_guidelines": {
+    "general": [
+      "No gradients for text. Keep text sharp white or light grey.",
+      "Avoid 'system' fonts. Use the specified Google Fonts.",
+      "Do not use generic 'card' layouts. Use 'Bento' grid arrangements.",
+      "Input fields should be 'h-12' or 'h-14' for better touch targets and professional feel.",
+      "All interactive elements must have 'transition-all duration-300'."
+    ],
+    "accessibility": {
+      "contrast": "Ensure text is APCA compliant (min Lc 60).",
+      "focus": "Visible Neon Lime ring offset on focus."
+    },
+    "testing": {
+      "attribute": "data-testid",
+      "format": "kebab-case-descriptive"
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. Install 'recharts' for the ML Insights panel.",
+    "2. Use 'framer-motion' for page transitions (Landing -> Dashboard).",
+    "3. Create the 'Layout' component first to handle the background and font imports.",
+    "4. Prioritize the 'Input Form' flow - it is the core interaction.",
+    "5. Ensure the 'Mode Badge' logic (Performance/Balanced/Recovery) drives the UI color hints subtly."
+  ]
+}
